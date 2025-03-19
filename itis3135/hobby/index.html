@@ -3,73 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokémon Card Collecting</title>
+    <title>Tae Kwon Do</title>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <style>
-        body { font-family: Arial, sans-serif; background: #f5f5dc; text-align: center; }
+        body { font-family: Arial, sans-serif; background: #e0f7fa; text-align: center; }
         .container { width: 80%; margin: auto; }
-        nav { background: #ffcc00; padding: 10px; }
+        nav { background: #009688; padding: 10px; }
         nav a { margin: 0 10px; text-decoration: none; font-weight: bold; cursor: pointer; }
         .section { display: none; opacity: 0; transition: opacity 0.5s ease-in-out; }
         .active { display: block; opacity: 1; }
         figure img { width: 300px; border-radius: 10px; }
-        footer { margin-top: 20px; padding: 10px; background: #ffcc00; }
+        footer { margin-top: 20px; padding: 10px; background: #009688; }
+        .centered-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
     </style>
 </head>
 <body>
     <header>
-        <h1>Pokémon Card Collecting</h1>
+        <h1>Tae Kwon Do</h1>
         <nav>
-            <a onclick="showSection('what')">🏠 Home</a> |
-            <a onclick="showSection('who')">🙋 About</a> |
-            <a onclick="showSection('when')">📅 Best Times</a> |
-            <a onclick="showSection('where')">📍 Locations</a> |
-            <a onclick="showSection('how')">🔍 How</a> |
-            <a onclick="showSection('why')">❓ Why</a> |
-            <a onclick="showSection('ai')">🤖 AI Prompts</a>
+            <a href="#" onclick="showSection('what')"> Home</a> |
+            <a href="#" onclick="showSection('who')"> About</a> |
+            <a href="#" onclick="showSection('when')"> Best Times</a> |
+            <a href="#" onclick="showSection('where')"> Locations</a> |
+            <a href="#" onclick="showSection('how')"> How</a> |
+            <a href="#" onclick="showSection('why')"> Why</a>
         </nav>
     </header>
     <main class="container">
         <section id="what" class="section active">
-            <h2>What is Pokémon Card Collecting?</h2>
-            <p>Pokémon card collecting is a fun hobby that involves trading, battling, and showcasing exquisite cards from the Pokemon franchise.</p>
+            <h2>What is Tae Kwon Do?</h2>
+            <p>Tae Kwon Do is a Korean martial art style for self-defense. It emphasizes fast strikes utlizing kicks, jumps, and forms. It requires self control, discipline, kindness and humility.</p>
             <figure>
-                <img src="images/pokemon_cards.jpg" alt="A collection of Pokémon cards">
-                <figcaption>My personal Pokémon card collection.</figcaption>
+                <img src="images/images.jpg" alt="Ballantyne Kicks Logo">
+                <figcaption>Ballantyne Kicks Logo.</figcaption>
             </figure>
+            <p>Ballantyne Kicks is a taekwondo school that teaches self-defense, it also houses brazilian jiu jitsu.</p>
         </section>
         <section id="who" class="section">
-            <h2>Who Am I</h2>
-            <p>My name is Ethan Lee and I collect pokemon cards.</p>
+            <h2>About Ballantyne Kicks</h2>
+            <p>Ballanytne Kicks is a taekwondo school located in North Carolina. There are instructor, most notably Master Vincent and Grand Master Russell. They teach over 15 forms of the style. There are over 7 belt colors, black being the last belt. Afterward in which several tiers of black belts can be achieved with 4th degree being master level.</p>
+            <figure>
+                <img src="images/IMG_20170429_104334_553.jpg" alt="Big Taekwondo team">
+                <figcaption>Big Taekwondo team.</figcaption>
+            </figure>
+            <p>Taekwondo is a way to get exercise in. Ballantyne Kicks also emphasizes discipline at home.</p>
         </section>
         <section id="when" class="section">
             <h2>Best Times</h2>
-            <p>When we meet - Thursday, Friday, and Saturday from 11:30 am to 5 pm</p>
+            <p>I had done taekwondo since I was ten and continued to do so for more than a decade. I founded friends and family while being there. Though the classes are taken seriously, we had fun times and goofy moments. I ended up getting my third degree black belt shortly before starting at UNC Charlotte.</p>
+            <figure>
+                <img src="images/IMG_0646.JPG" alt="Me and my brother earning our 1st black belt">
+                <figcaption>Me and my brother earning our 1st black belt.</figcaption>
+            </figure>
+            <a href="https://www.ballantynekicks.com/">Ballantyne Kicks Website</a>
+            <a href="https://www.facebook.com/ballantynekickstkd/">Ballantyne Kicks Facebook</a>
         </section>
         <section id="where" class="section">
-            <h2>Where to go</h2>
-            <p>Unc Charlotte, Fretwell Room 303.</p>
+            <h2>Where Is It Located</h2>
+            <p>15105 John J Delaney Dr, Charlotte, NC 28277</p>
+            <figure>
+                <img src="images/IMG_20170429_104457_215.jpg" alt="Me and my brother with Master Russell">
+                <figcaption>Me and my brother with Master Russell.</figcaption>
+            </figure>
+            <img src="images/bk-fall-2022-schedule.jpg" alt="Ballantyne Kicks Schedule" class="centered-img">
         </section>
         <section id="how" class="section">
-            <h2>How to Collect Pokémon Cards</h2>
-            <p>Start by buying packs, trading with friends, and looking for special deals.</p>
+            <h2>How It Works</h2>
+            <p>In my experince we have taekwondo instructors teach techniques and forms to the students. After learning and mastering them, they are put through a test before moving up the next belt color. Tests and techniques get more advanced and difficult as you move to the next belt color.</p>
+            <figure>
+                <img src="images/IMG_20180930_210242_920.jpg" alt="My brother performing a flying sidekick">
+                <figcaption>My brother performing a flying sidekick.</figcaption>
+            </figure>
+            <p>When I was practicing for my tests, I always practiced at home and watched a couple youtube videos to help me.</p>
         </section>
         <section id="why" class="section">
-            <h2>Why Collect Pokémon Cards?</h2>
-            <p>It’s a nostalgic and rewarding hobby that brings joy and excitement.</p>
-        </section>
-        <section id="ai" class="section">
-            <h2>AI Prompts Used</h2>
-            <p>the hobby is pokemon cards</p>
+            <h2>Why I Did It?</h2>
+            <p>When I was younger, my parents had me try out multiple different sports. None of them stuck with me, till I tried taekwondo. I always thought the reason my dad registered me for it was that I needed self-defense as I was bullied alot in elementary. After a decade of practicing, I can condfidently say it was the right sport for me.</p>
+            <figure>
+                <img src="images/20220514_152913.jpg" alt="Smaller Taekwondo Team">
+                <figcaption>Smaller Taekwondo Team.</figcaption>
+            </figure>
+            <p>I highly reccomend it for anyone as an option for a sport. It is fun and stress reliving.</p>
         </section>
     </main>
     <footer>
-        <p>Designed by <a href="#">Your Design Firm</a></p>
-        <p><a href="#">HTML Validation</a> | <a href="#">CSS Validation</a> | <a href="#">Accessibility Validation</a></p>
+        <p>
+            Pages built by <a href="../extravagentlion.com">Extravagent Lion Enterprises</a>, <a href="https://www.freecodecamp.org/certification/ethanrlee1/responsive-web-design"><em>Certified in Responsive Web Design</em></a> © 2023
+        </p>
     </footer>
     <script>
         function showSection(sectionId) {
-            document.querySelectorAll('.section').forEach(section => {
+            document.querySelectorAll('.section').forEach((section) => {
                 section.classList.remove('active');
             });
             document.getElementById(sectionId).classList.add('active');
