@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYO Intro - ITIS3135</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="scripts/survey.js" defer></script>
+    <style>
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 50px;
+            font-size: 40px;
+            color: #008B8B;
+        }
+        .link {
+            text-align: center;
+        }
+        header {
+            color: #008B8B;
+        }
+        h2, h3 {
+            text-align: center;
+            color: #F4F1BB;
+        }
+        .description {
+            text-align: center;
+            color: #F4F1BB;
+        }
+        body {
+            background-color: #494F55;
+        }
+        footer {
+            text-align: center;
+            color: #008B8B;
+        }
+        a {
+            color: lightblue;
+        }
+        main {
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
+            color: #F4F1BB;
+        }
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+        input[type="text"], input[type="file"] {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        textarea {
+            width: 100%;
+            height: 60px;
+            margin-top: 5px;
+        }
+        button, input[type="submit"], input[type="reset"] {
+            margin: 10px 5px;
+        }
+        #coursesSection div {
+            margin-bottom: 5px;
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 980px) {
+            main { width: 95%; }
+            body { background-color: #2C2C2C; }
+        }
+
+        @media screen and (min-width: 370px) and (max-width: 600px) {
+            main { width: 100%; }
+            body { background-color: #2C2C2C; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ethan Lee's Extravagent Lion - ITIS3135</h1>
+        <p class="link">
+            <a href="index.html">Homepage</a> ||
+            <a href="introduction.html">Introduction</a> ||
+            <a href="contract.html">Contract</a> ||
+            <a href="extravagentlion" target="_blank">Whimsical Company</a> ||
+            <a href="extravagentlion.com" target="_blank">Design Page</a> ||
+            <a href="crappyWEBPAGE.html">Crappy Webpage</a> ||
+            <a href="hobby">Hobby</a> ||
+            <a href="website_evaluations.html">Website Evaluation</a> ||
+            <a href="tables.html">Tables</a> ||
+            <a href="byo_intro.html">BYO Intro</a>
+        </p>
+    </header>
+
+    <main>
+        <h2>Build Your Own Introduction</h2>
+        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+
+        <form id="introForm" enctype="multipart/form-data">
+            <label>Name: <input type="text" name="name" required></label>
+            <label>Mascot: <input type="text" name="mascot" required></label>
+            <label>Upload Image: <input type="file" name="image" accept="image/png, image/jpeg" required></label>
+            <label>Image Caption: <input type="text" name="caption" required></label>
+            <label>Personal Background: <textarea name="personal" required></textarea></label>
+            <label>Professional Background: <textarea name="professional" required></textarea></label>
+            <label>Academic Background: <textarea name="academic" required></textarea></label>
+            <label>Web Development Background: <textarea name="webdev" required></textarea></label>
+            <label>Primary Computer Platform: <input type="text" name="platform" required></label>
+
+            <div id="coursesSection">
+                <label>Courses Currently Taking:</label>
+                <button type="button" onclick="addCourseField()">Add Course</button>
+                <!-- Course fields will go here -->
+            </div>
+
+            <label>Funny thing? <input type="text" name="funny"></label>
+            <label>Anything else? <input type="text" name="extra"></label>
+            <label>
+                <input type="checkbox" name="agreement" required>
+                I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+            </label>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+
+        <div id="result"></div>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://github.com/ethanrlee1" target="_blank">Github</a> ||
+            <a href="https://webpages.charlotte.edu/elee75/" target="_blank">CLT Webpage</a> ||
+            <a href="https://webpages.charlotte.edu/elee75/" target="_blank">CLT Webpage</a> ||
+            <a href="https://ethanrlee1.github.io/" target="_blank">Github.io</a> ||
+            <a href="index.html">ITIS 3135</a> ||
+            <a href="https://www.linkedin.com/in/ethan-lee-050341205/" target="_blank">LinkedIn</a>
+        </p>
+        <p>
+            Pages built by <a href="extravagentlion.com">Extravagent Lion Enterprises</a>, <a href="https://www.freecodecamp.org/certification/ethanrlee1/responsive-web-design"><em>Certified in Responsive Web Design</em></a> © 2023
+        </p>
+    </footer>
+</body>
+</html>

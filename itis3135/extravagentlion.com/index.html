@@ -4,31 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Extravagent Lion Enterprises - Professional Consulting & Design Firm</title>
-
-    <header>
-        <h1>Extravagent Lion Enterprises - Professional Consulting & Design Firm</h1>
-        <p class="link">
-            <a href="index.html">Website Page</a> ||
-            <a href="index.html">Store Page</a> ||
-            <a href="index.html">About Page</a>
-        </p>
-    </header>
-
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
 
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             color: #333;
             line-height: 1.6;
+            font-size: 16px;
         }
-
 
         header {
             background-color: #003049;
@@ -38,7 +23,7 @@
             border-bottom: 5px solid #d62828;
         }
 
-        header h1 {
+        h1 {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -50,6 +35,7 @@
             width: 50px;
             margin-right: 10px;
         }
+
         header a {
             color: #fcbf49;
             text-decoration: none;
@@ -60,7 +46,6 @@
             color: #f77f00;
             text-decoration: underline;
         }
-
 
         nav a {
             color: #fcbf49;
@@ -73,13 +58,11 @@
             color: #f77f00;
         }
 
-
         main {
             background-color: white;
-            padding: 30px;
             margin: 30px auto;
-            width: 80%;
-            max-width: 900px;
+            width: 90%;
+            max-width: 1200px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             border-radius: 8px;
         }
@@ -111,7 +94,6 @@
             margin-top: 20px;
         }
 
-
         footer {
             background-color: #003049;
             color: #fcbf49;
@@ -132,32 +114,44 @@
         footer p {
             margin: 5px 0;
         }
-        main { 
-                max-width: 1200px;
-                width: 90%;
-                margin: 0 auto;
+
+        @media screen and (min-width: 601px) and (max-width: 980px) {
+            main {
+                width: 95%;
             }
-            @media screen and (min-width: 601px) and (max-width: 980px) {
-    main { width: 95%; }
-    body { background-color: lightgray; }
-}
-@media screen and (min-width: 370px) and (max-width: 600px) {
-    main { width: 100%; }
-    body { background-color: white; }
-}
+            body {
+                background-color: lightgray;
+            }
+        }
+
+        @media screen and (min-width: 370px) and (max-width: 600px) {
+            main {
+                width: 100%;
+            }
+            body {
+                background-color: white;
+            }
+        }
     </style>
 </head>
 <body>
+    <header>
+        <h1><img class="small-img" src="images/OIP.jpg" alt="Lion"/>Extravagent Lion Enterprises - Professional Consulting & Design Firm</h1>
+        <p class="link">
+            <a href="index.html">Website Page</a> ||
+            <a href="index.html">Store Page</a> ||
+            <a href="index.html">About Page</a>
+        </p>
+    </header>
+
     <main>
-        <h2>
-            About Page
-        </h2>
+        <h2>About Page</h2>
         <p>
             We are a professional web consulting firm. We pride ourselves on delivering unique solutions that align with your business goals while adhering to industry standards.
         </p>
         <ul>
             <li>Over 15 years of combined experience in web development and IT consulting</li>
-            <li>prioritizes your vision</li>
+            <li>Prioritizes your vision</li>
             <li>Flexible pricing</li>
             <li>100% transparency</li>
         </ul>
@@ -176,9 +170,11 @@
             <a href="index.html" target="_blank">Terms of Service</a>
         </p>
         <p>
-            Pages built by <a href="index.html">Extravagent Lion Enterprises</a>, <a href="https://www.freecodecamp.org/certification/ethanrlee1/responsive-web-design"><em>Certified in Responsive Web Design</em></a> © 2023
+            Pages built by <a href="index.html">Extravagent Lion Enterprises</a>, 
+            <a href="https://www.freecodecamp.org/certification/ethanrlee1/responsive-web-design">
+                <em>Certified in Responsive Web Design</em>
+            </a> © 2023
         </p>  
-
     </footer>
 </body>
-</html> 
+</html>
