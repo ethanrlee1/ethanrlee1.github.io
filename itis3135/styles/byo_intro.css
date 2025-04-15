@@ -1,0 +1,192 @@
+
+body {
+    background: #494F55;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #F4F1BB;
+    padding: 1em;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #333941;
+    border-radius: 1em;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    padding: 2em;
+}
+
+
+h2, h3 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #F4F1BB;
+    text-align: center;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #F4F1BB;
+}
+
+form input[type="text"],
+form input[type="file"],
+form input[type="checkbox"],
+form textarea {
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    background-color: #2C2C2C;
+    color: #F4F1BB;
+}
+
+form input[type="submit"],
+form input[type="reset"],
+form button {
+    background-color: #008B8B;
+    border: none;
+    border-radius: 1em;
+    padding: 0.75em 1.5em;
+    font-size: 1em;
+    font-weight: bold;
+    color: #F4F1BB;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 1em;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover,
+form button:hover {
+    background-color: #00baba;
+}
+
+
+#coursesContainer > div {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    margin-top: 0.5em;
+}
+
+
+#output {
+    margin-top: 2em;
+    background-color: #2C2C2C;
+    border: 2px dashed #008B8B;
+    padding: 2em;
+    border-radius: 1em;
+    color: #F4F1BB;
+}
+
+
+figure {
+    text-align: center;
+    margin-top: 1em;
+}
+
+figure img {
+    border-radius: 1em;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 0.5em;
+    color: #F4F1BB;
+}
+
+/* Header and Footer Styling */
+header, footer {
+    text-align: center;
+    background-color: #2C2C2C;
+    padding: 1em 0;
+    border-top: 4px solid #008B8B;
+    border-bottom: 4px solid #008B8B;
+    color: #F4F1BB;
+}
+
+/* Optional: limit width and center content */
+header p.link,
+footer p {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Navigation and Links */
+header a, footer a {
+    display: inline-block;
+    margin: 0.2em 0.5em;
+    color: lightblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover,
+footer a:hover {
+    color: #87CEFA;
+    text-decoration: underline;
+}
+
+/* Lists */
+ul {
+    list-style-position: inside;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+ul li {
+    text-align: left;
+    width: 60%;
+    font-size: 1.3em;
+    color: #F4F1BB;
+}
+
+/* Custom Classes */
+.text, .sign, .bio, .description {
+    text-align: center;
+    color: #F4F1BB;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.bio {
+    font-size: 25px;
+}
+
+.link, .links {
+    text-align: center;
+    color: #F4F1BB;
+    font-size: 1.5em;
+}
+
+.small-img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    main { width: 95%; }
+    body { background-color: #2C2C2C; }
+}
+
+@media screen and (min-width: 370px) and (max-width: 600px) {
+    main { width: 100%; }
+    body { background-color: #2C2C2C; }
+}
