@@ -3,21 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ethan Lee's Extravagent Lion - ITIS3135 - Home</title>
+    <title>Ethan Lee's Extravagent Lion - ITIS3135 - Forms</title>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/forms.css">
 </head>
 <body>
     <div data-include="includes/header.html"></div>
 
     <main>
-        <h2>Home</h2>
+        <h2>Forms</h2>
         <p class="description">
-            Welcome to my 3135 Course Page.
+            Please fill out the form below to learn more about our services!
         </p>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required size="30" placeholder="Your full name"><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required size="20" placeholder="123-456-7890"><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required size="30" placeholder="you@example.com"><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Service Interests</legend>
+                
+                <p>What services are you interested in? (Check all that apply)</p>
+                
+                <label><input type="checkbox" name="services" value="design"> Design</label>
+                <label><input type="checkbox" name="services" value="maintenance"> Maintenance</label>
+                <label><input type="checkbox" name="services" value="web"> Web</label>
+                <label><input type="checkbox" name="services" value="consulting"> Consulting</label>
+                <label><input type="checkbox" name="services" value="website"> Website</label>
+                
+                <p>Preferred Contact Method:</p>
+                
+                <label><input type="radio" name="contact" value="email"> Email</label>
+                <label><input type="radio" name="contact" value="phone"> Phone</label>
+                <label><input type="radio" name="contact" value="text"> Text</label>
+                
+                <p>Estimated Budget:</p>
+                <select name="budget" required>
+                    <option value="">--Please Choose an Option--</option>
+                    <option value="under1k">Under $1,000</option>
+                    <option value="1k-5k">$1,000 - $5,000</option>
+                    <option value="5kplus">$5,000+</option>
+                </select>
+            </fieldset>
+            
+
+            <div style="text-align: center; margin-top: 20px;">
+                <button type="reset">Reset Form</button>
+                <button type="submit">Submit Form</button>
+            </div>
+        </form>
     </main>
 
     <div data-include="includes/footer.html"></div>
     <script src="scripts/include.js"></script>
 </body>
 </html>
+

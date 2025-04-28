@@ -1,0 +1,115 @@
+/* form-styles.css */
+h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    font-size: 40px;
+    color: #008B8B;
+}
+.link {
+    text-align: center;
+}
+.links {
+    text-align: center;
+    color: #F4F1BB;
+    font-size: 1.5em;
+}
+footer {
+    text-align: center;
+    color: #008B8B;
+}
+a {
+    color: lightblue;
+}
+body {
+    background-color: #494F55;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    color: #F4F1BB;
+}
+
+.description {
+    text-align: center;
+    color: #F4F1BB;
+}
+
+form {
+    background-color: #2C2C2C;
+    border-radius: 10px;
+    margin: 30px auto;
+    width: 80%;
+    color: #F4F1BB;
+    font-size: 1.1em;
+}
+
+fieldset {
+    border: 2px solid #008B8B;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: #008B8B;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+    width: 95%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #008B8B;
+    color: #F4F1BB;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005f5f;
+}
+
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    main { width: 95%; }
+    form { width: 90%; }
+}
+
+@media screen and (min-width: 370px) and (max-width: 600px) {
+    main { width: 100%; }
+    form { width: 95%; }
+}
