@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEC Club - Events</title>
+    <link rel="stylesheet" href="styles/projectStyle.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div data-include="includes/header.html"></div>
+    <main>
+        <section class="content">
+            <h2>Upcoming & Recent Events</h2>
+            <ul class="events-list">
+                <li>
+                    <img src="images/movie-night.jpg" alt="Students watching a movie" class="event-img">
+                    <h3>Movie Night</h3>
+                    <p>Join us in the discord for a chill movie night!</p>
+                </li>
+                <li>
+                    <img src="images/game-tournament.jpg" alt="Gaming event" class="event-img">
+                    <h3>Game Night</h3>
+                    <p>Hang out and play fun social games like Jackbox, puzzles, board games, card games, Minecraft, Roblox, and more. All are welcome!</p>
+                </li>
+                <li>
+                    <img src="images/art-corner.jpg" alt="Art supplies on a table" class="event-img">
+                    <h3>Art Corner</h3>
+                    <p>Unleash your creativity in our art session — open to doodlers, artists, and creators of all kinds.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="content">
+            <h2>Movie Night Picks 🍿</h2>
+            <p>Check out some favorite movie and show suggestions from our club members. Join us to vote and enjoy one together during our next social night!</p>
+            <div class="movie-suggestions">
+                <h4>Movie Suggestions</h4>
+                <ul id="movieList"></ul>
+            
+                <form id="movieForm">
+                    <input type="text" id="movieInput" placeholder="Suggest a movie..." required>
+                    <button type="submit" class="btn">Add</button>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+    <div data-include="includes/footer.html"></div>
+    <script src="scripts/include.js"></script>
+    <script src="scripts/movies.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join TEC Club</title>
+    <link rel="stylesheet" href="styles/projectStyle.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Include -->
+    <div data-include="includes/header.html"></div>
+
+    <section class="content">
+        <h2>Join TEC Club</h2>
+        <p>Fill out the form below to become a member of our school’s tech-forward community!</p>
+
+        <form id="joinForm" onsubmit="return validateForm()">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="studentId">Student ID:</label><br>
+            <input type="text" id="studentId" name="studentId" required><br><br>
+
+
+            <label for="grade">Year:</label><br>
+            <select id="grade" name="grade" required>
+                <option value="">--Select your year--</option>
+                <option value="9">Freshman</option>
+                <option value="10">Sophmore</option>
+                <option value="11">Junior</option>
+                <option value="12">Senior</option>
+            </select><br><br>
+
+            <button type="submit" class="btn">Join Now</button>
+        </form>
+
+        <p id="confirmation" style="margin-top:20px; color:green; font-weight:bold;"></p>
+    </section>
+    <script src="scripts/join.js"></script>
+
+    <div data-include="includes/footer.html"></div>
+    <script src="scripts/include.js"></script>
+</body>
+</html>

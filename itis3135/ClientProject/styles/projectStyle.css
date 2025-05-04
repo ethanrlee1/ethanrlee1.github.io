@@ -1,0 +1,103 @@
+
+
+body {
+    font-family: 'Orbitron', sans-serif; /* futuristic style */
+    background: linear-gradient(to right, #c3f5d3, #a1c4fd);
+    color: #0c2d57;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #0c2d57;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 60px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px #1e90ff;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #a1c4fd;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: none;
+}
+
+.hero {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px #1e90ff;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #0c2d57;
+}
+
+.btn {
+    background-color: #0c2d57;
+    color: #FFFFFF;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.btn:hover {
+    background-color: #1e90ff;
+    color: #fff;
+}
+
+/* Content Section */
+.content {
+    width: 80%;
+    margin: 50px auto;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    color: #0c2d57;
+}
+
+/* Optional: Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0c2d57;
+    color: #fff;
+}
