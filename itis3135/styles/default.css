@@ -41,6 +41,15 @@ li {
     color: #F4F1BB;
     font-size: 1.5em;
 }
+.centered-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    text-align: center;
+}
+
 ul {
     list-style-position: inside;
     text-align: center;
