@@ -14,17 +14,14 @@
             <h2>Upcoming & Recent Events</h2>
             <ul class="events-list">
                 <li>
-                    <img src="images/movie-night.jpg" alt="Students watching a movie" class="event-img">
                     <h3>Movie Night</h3>
                     <p>Join us in the discord for a chill movie night!</p>
                 </li>
                 <li>
-                    <img src="images/game-tournament.jpg" alt="Gaming event" class="event-img">
                     <h3>Game Night</h3>
                     <p>Hang out and play fun social games like Jackbox, puzzles, board games, card games, Minecraft, Roblox, and more. All are welcome!</p>
                 </li>
                 <li>
-                    <img src="images/art-corner.jpg" alt="Art supplies on a table" class="event-img">
                     <h3>Art Corner</h3>
                     <p>Unleash your creativity in our art session — open to doodlers, artists, and creators of all kinds.</p>
                 </li>
@@ -41,12 +38,48 @@
                     <input type="text" id="movieInput" placeholder="Suggest a movie..." required>
                     <button type="submit" class="btn">Add</button>
                 </form>
+                <button type="button" id="clearMovies" class="btn">Clear All User Suggestions</button>
             </div>
         </section>
-        
+        <section class="content">
+            <h2>Event Photo Gallery</h2>
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="images/IMG_4305.jpg" alt="Students watching a movie">
+                    <p class="caption">Movie Night</p>
+                </div>
+                <div class="slide fade">
+                    <img src="images/cachedImage.jpg" alt="Gaming event">
+                    <p class="caption">Lego Night</p>
+                </div>
+                <div class="slide fade">
+                    <img src="images/IMG_4181.jpg" alt="Gaming event">
+                    <p class="caption">Game Night</p>
+                </div>
+                <div class="slide fade">
+                    <img src="images/IMG_4308.jpg" alt="Art supplies on a table">
+                    <p class="caption">Art Corner</p>
+                </div>
+                <div class="slide fade">
+                    <img src="images/IMG_4304.jpg" alt="Art supplies on a table">
+                    <p class="caption">Art Corner</p>
+                </div>
+            </div>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </section>
+        <section class="content">
+            <h2>Thanks to @manngoann for Providing the Pictures!</h2>
+        </section>
     </main>
-    <div data-include="includes/footer.html"></div>
+    <div data-include="includes/footer.html"></div>      
     <script src="scripts/include.js"></script>
     <script src="scripts/movies.js"></script>
+    <script src="scripts/gallery.js"></script>
 </body>
 </html>

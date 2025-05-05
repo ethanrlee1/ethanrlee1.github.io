@@ -14,16 +14,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const movieList = document.getElementById("movieList");
   const movieForm = document.getElementById("movieForm");
   const movieInput = document.getElementById("movieInput");
+  const clearBtn = document.getElementById("clearMovies");
 
-    // Helper function
-    function addMovieToList(movie) {
-      const li = document.createElement("li");
-      li.textContent = movie;
-      movieList.appendChild(li);
-    }
+  // Helper function
+  function addMovieToList(movie) {
+    const li = document.createElement("li");
+    li.textContent = movie;
+    movieList.appendChild(li);
+  }
 
-  // Populate default list
-  movieSuggestions.forEach(addMovieToList);
+  // Load from localStorage if available
+  const savedMovies = JSON.parse(localStorage.getItem("userMovies")) || [];
+  const allMovies = [...movieSuggestions, ...savedMovies];
+  allMovies.forEach(addMovieToList);
 
   // Handle form submission
   movieForm.addEventListener("submit", (e) => {
@@ -31,7 +34,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const newMovie = movieInput.value.trim();
     if (newMovie !== "") {
       addMovieToList(newMovie);
+      savedMovies.push(newMovie);
+      localStorage.setItem("userMovies", JSON.stringify(savedMovies));
       movieInput.value = "";
+    }
+  });
+
+  clearBtn.addEventListener("click", () => {
+    if (confirm("Are you sure you want to remove all user-added movie suggestions?")) {
+      localStorage.removeItem("userMovies");
+      // Clear all list items
+      movieList.innerHTML = "";
+      // Re-add default suggestions
+      movieSuggestions.forEach(addMovieToList);
     }
   });
 });
